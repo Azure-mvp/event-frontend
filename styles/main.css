@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #D3DAF9;
+    color: #333;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #fff;
+}
+
+h1 {
+    color: #37437D;
+    .event-list-title
+
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.event-cards {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.event-card {
+    background-color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #37437D;
+}
+
+.event-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.event-date {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.event-description {
+    color: #374151;
+}
+
+.event-location {
+    font-size: 0.9rem;
+    color: #1f2937;
+}
+
+.event-empty {
+    font-style: italic;
+    color: #6b7280;
+}
+.event-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-edit {
+    background-color: #3b82f6;
+    color: white;
+}
+
+    .btn-edit:hover {
+        background-color: #2563eb;
+    }
+
+.btn-delete {
+    background-color: #ef4444;
+    color: white;
+}
+
+    .btn-delete:hover {
+        background-color: #dc2626;
+    }
+
+}
+
+
+/* Lägg till mer efter hand */

@@ -1,0 +1,65 @@
+.event-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s ease;
+}
+
+    .event-card:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    }
+
+.event-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.event-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.event-description {
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+
+.event-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: #4B5563;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+    .event-meta div {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+.event-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+    .event-actions button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.25rem;
+        color: #37437D;
+        transition: color 0.2s ease;
+    }
+
+        .event-actions button:hover {
+            color: #F26CF9;
+        }
