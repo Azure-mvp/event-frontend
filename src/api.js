@@ -1,5 +1,5 @@
 const EVENT_API = "https://localhost:7103/api/events";
-const USER_API = "https://localhost:7009/api";
+const USER_API = "https://userservice-api.azurewebsites.net/api";
 
 /* Events */
 export async function fetchEvents() {
@@ -60,4 +60,3 @@ export async function login(username, password) {
     }
 
     return await res.json();
-}
