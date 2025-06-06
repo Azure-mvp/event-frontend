@@ -1,4 +1,4 @@
-const EVENT_API = "https://localhost:7103/api/events";
+const EVENT_API = "https://eventservice-api.azurewebsites.net/api/events";
 const USER_API = "https://userservice-api.azurewebsites.net/api";
 
 /* Events */
