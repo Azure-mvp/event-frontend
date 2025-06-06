@@ -1,5 +1,5 @@
-const EVENT_API = "https://eventservice-api.azurewebsites.net/api/events";
-const USER_API = "https://userservice-api.azurewebsites.net/api";
+const EVENT_API = "https://eventservice-api-cebndaaheydrfbcs.westeurope-01.azurewebsites.net";
+const USER_API = "https://userservice-api-b8ewh4fygsazhahn.westeurope-01.azurewebsites.net";
 
 /* Events */
 export async function fetchEvents() {
