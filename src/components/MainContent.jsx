@@ -1,5 +1,5 @@
 ﻿import { useState } from "react";
-import "../../styles/maincontent.css";
+import "../../styles/MainContent.css";
 import EventForm from "./EventForm";
 import EventList from "./EventList";
 
