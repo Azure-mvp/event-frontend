@@ -1,5 +1,4 @@
-﻿// This component lists all events and provides edit/delete functionality.
-// Created with assistance from ChatGPT to handle modal logic and async API integration.
+﻿
 
 import { useEffect, useState } from "react";
 import { fetchEvents, updateEvent, deleteEvent } from "../api";
@@ -8,8 +7,8 @@ import EditEventModal from "./EditEventModal";
 import "../../styles/EventCard.css";
 
 const EventList = () => {
-    const [events, setEvents] = useState([]); // Lista med events
-    const [editingEvent, setEditingEvent] = useState(null); // Det event som just nu redigeras
+    const [events, setEvents] = useState([]); 
+    const [editingEvent, setEditingEvent] = useState(null); 
 
     // Hämtar events från backend
     const loadEvents = async () => {
@@ -17,7 +16,7 @@ const EventList = () => {
         setEvents(data);
     };
 
-    // Körs när komponenten mountas – hämtar eventlistan en gång
+    // Körs när komponenten mountas – hämtar eventlistan en gång. Skapad med hjälp av ChatGPT
     useEffect(() => {
         loadEvents();
     }, []);
@@ -42,12 +41,12 @@ const EventList = () => {
         }
     };
 
-    // Stänger modalen för redigering
+    // Stänger modalen för redigering. Skapad med hjälp av ChatGPT.
     const handleCloseModal = () => setEditingEvent(null);
 
     return (
         <div>
-            {/* Visar modal för redigering om ett event är valt */}
+            
             {editingEvent && (
                 <EditEventModal
                     event={editingEvent}

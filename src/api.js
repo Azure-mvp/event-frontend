@@ -59,5 +59,5 @@ export async function login(username, password) {
         throw new Error("Wrong username or password");
     }
 
-    return await res.json(); // expected response: { username, token }
+    return await res.json();
 }

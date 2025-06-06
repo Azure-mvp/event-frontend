@@ -11,7 +11,7 @@ const Login = ({ onLoginSuccess }) => {
         e.preventDefault();
         try {
             const userData = await login(username, password);
-            onLoginSuccess(userData); // Skickar användardata upp till App.jsx
+            onLoginSuccess(userData); 
         } catch {
             setError("Incorrect username or password");
         }

@@ -10,7 +10,7 @@ const EventCard = ({ event, onEdit, onDelete }) => {
                 <h3 className="event-title">{event.title}</h3>
                 <p className="event-description">{event.description}</p>
 
-                {/* Metadata med ikon + datum och plats */}
+                
                 <div className="event-meta">
                     <div className="event-meta-item">
                         <Calendar size={16} /> <span>{event.date}</span>

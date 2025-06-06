@@ -1,11 +1,11 @@
 ﻿import "../../styles/Sidebar.css";
 import { Home, Calendar, Settings, LogOut } from "lucide-react";
-import Logo from "../images/Logo.png"; // <- Importera loggan
+import Logo from "../images/Logo.png"; 
 
 const Sidebar = () => {
     const handleLogout = () => {
         localStorage.removeItem("user");
-        window.location.reload(); // Ladda om för att gå tillbaka till login
+        window.location.reload(); // Ladda om för att gå tillbaka till login. Skapad med hjälp av Chatpgt.
     };
 
     return (
