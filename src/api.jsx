@@ -49,7 +49,7 @@ export async function updateEvent(eventId, updatedData) {
 
 /* Login */
 export async function login(username, password) {
-    const res = await fetch(`${USER_API}/auth/login`, {
+    const res = await fetch(`${USER_API}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
