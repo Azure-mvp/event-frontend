@@ -1,4 +1,4 @@
-const EVENT_API = "https://eventservice-api-cebndaaheydrfbcs.westeurope-01.azurewebsites.net/api/events";
+const EVENT_API = "https://eventservice-api-cebndaaheydrfbcs.westeurope-01.azurewebsites.net/api/Events";
 const USER_API = "https://userservice-api-b8ewh4fygsazhahn.westeurope-01.azurewebsites.net";
 
 /* Events */
@@ -47,7 +47,7 @@ export async function updateEvent(eventId, updatedData) {
     }
 }
 
-/* Login */
+/* Login. Skapad med hjälp av ChatGPT */
 export async function login(username, password) {
     const res = await fetch(`${USER_API}/api/auth/login`, {
         method: "POST",
